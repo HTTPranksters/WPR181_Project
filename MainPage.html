@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Concepts</title>
+
+    <link href="Style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header>
+        <h1 id="mHead1">Web Concepts</h1>
+    </header>
+    <nav>
+        <ul id="Menu">
+            
+            <li id="History" class="Horizontal"><a href="History.html">History of the internet</a></li>
+            <li id="Evolution" class="Horizontal"><a href="Evolution.html">Evolution of the internet</a></li>
+            <li id="Navigation" class="Horizontal"><a>Navigate to your desired section</a></li>
+
+            <ul id="SubMenu">
+                <li class="Vertical"><a href="#Section2">Overview of the World Wide Web</a></li>
+                <li class="Vertical"><a href="#Section3">WWW vs the Internet</a></li>
+                <li class="Vertical"><a href="#Section4">Internet protocols</a></li>
+                <li class="Vertical"><a href="#Section5">Web Application Architecture</a></li>
+                <li class="Vertical"><a href="#Section6">Client-side and server-side engineering</a></li>
+            </ul>
+        </ul>
+    </nav>
+    <main id="mMain">
+        <section id="Section1">
+            <p>
+                <div id="WorldOfInternet">
+                    <img src="WorldOfInternet.jpg" alt="World Of Internet">
+                </div>             
+                <div id="Introduction">
+                    The World Wide Web (WWW) and the Internet have transformed the way we communicate, access information, and conduct business. This document delves into the intricacies of the World Wide Web and the evolution of the Internet, exploring their history, differences, protocols, architecture, and engineering aspects.
+                </div>
+            </p>
+        </section>
+        <section id="Section2">
+            <h2>Overview of the World Wide Web</h2>
+            <p>
+                The World Wide Web (WWW) was created by Tim Berners-Lee in 1989. Tim was a British computer scientist for CERN (European Organization for Nuclear Research) in Switzerland and is now often referred to as the father of the web. The motivation behind creating the WWW was to solve the challenges experienced by the researchers at CERN, like sharing research and accessing this research. At that time researchers and scientists as well as institutions were generating large amounts of documents and data and they needed a better way of sharing, organising, and accessing this data. So, in 1989 Tim developed the first web browser at CERN for better communication and information sharing between scientists. It was called the World Wide Web, a browser, and an editor. His vision included linking documents by using hyperlinks and the usage of protocols for this communication, like Hyper Text Transfer Protocol (HTTP). (Britannica, 2023). The world wide web is a collection of all websites and pages that allows users to connect their local devices to other nonlocal devices through the internet. The world wide web can show information on website in many ways such as text, audio, images, and video. It allows this communication around the world using hypertext and HTTP. 
+            </p>
+        </section>
+        <section id="Section3">
+            <h2>WWW vs the Internet</h2>
+            <p>
+                The World Wide Web is a virtual system that allows information and hypermedia to be shared over the Internet through hyperlinks that are referenced by Uniform Resource Locators (URLs). Users search up a word or phrase and can access documents on that specific word or phrase and other documents related to that word or phrase.
+            <p>
+                The Internet is a network system that provides worldwide communication and access to data resources including videos, audio, and images. It’s governed by agencies that establish protocols.
+            </p>
+            <p>
+                Here are some differences between the two:
+                <ul id="Differences">
+                    <li class="Differences">Internet uses IP addresses while the World Wide Web uses HTTP.</li>
+                    <li class="Differences">World Wide Web is part of the Internet.</li>
+                    <li class="Differences">Internet is hardware-based while the World Wide Web is software-based.</li>
+                    <li class="Differences">Internet originated in the late 1960s while the World Wide Web was established in 1989.</li>
+                    <li class="Differences">Internet connects a device to other devices irrespective of their location(s), while the World Wide Web contains information and makes it accessible through the Internet.</li>
+                    <li class="Differences">The Internet is like a bookstore and the Web is the collection of books in the store.</li>
+                </ul>
+
+            </p>
+
+            </p>
+        </section>
+        <section id="Section4">
+            <h2>Internet protocols</h2>
+            <p>
+                Internet protocols are the roles that governs the exchange of data over the internet. Both the device that sends the data and the device that is receiving the data are required to follow the same protocols for the communication of data to be successfully. When data is transferred over the internet it is sent in small packets of organized data. The internet protocols define how those packets are organized.
+            </p>
+
+            <p>
+                They include the following:
+                <ul id="Protocols">
+                    <li class="Protocols">
+                        <u>TCP/IP (Transmission Control Protocol/Internet Protocol)</u>: This is the foundational protocol suite of the internet. It is used to ensure reliable communication by breaking data down into packets, sending them to their destination and the reassembling them.                        
+                    </li>
+                    <li class="Protocols">
+                        <u>HTTP/HTTPS (Hypertext Transfer Protocol/Secure)</u>: This protocol is used to for transferring web pages from web servers to web browsers. It also defines the way how data is requested and presented on the WWW. HTTPS is just the secure version of HTTP, which uses encryption to protect data and provide security and privacy.                       
+                    </li>
+                    <li class="Protocols">
+                        <u>FTP (File Transfer Protocol)</u>: This protocol is used when transferring files over the internet. It provides users with the opportunity to upload and download files to and from remote servers.                       
+                    </li>
+                    <li class="Protocols">
+                        <u>DNS (Domain Name System)</u>: This protocol is responsible for converting domain names that humans can read, like (www.example.com) into IP-addresses computers can understand, It gives users the opportunity to access the web by using domain names instead of IP-addresses.
+                    </li>
+                    <li class="Protocols">
+                        <u>SMTP/POP3/IMAP (Simple Mail Transfer Protocol/Post Office Protocol/Internet Message Access Protocol)</u>: These protocols are used in email communication. SMTP is responsible for sending emails, while POP3 and IMAP is responsible for receiving emails on the client’s side. POP3 is used to download emails and remove them from the server, while IMAP keeps the emails on the server and just synchronises them with the client.
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <section id="Section5">
+            <h2>Web Application Architecture</h2>
+            <p>
+                Web Application Architecture refers to the components are organised, forming the structure of a web application. It also includes how components communicate with each other to provide a user experience. Developers use different architectural patterns to develop web applications, these are some of the different web application architecture patterns:
+            </p>
+            <p>
+                <b><u>Client-Server Architecture</u></b>: This is a fundamental model where the application is divided into two main components, which include the client and server. The client, usually a web browser, requests data from the server and the server receives these requests, processes them, and then sends back the requested data to the client. The client side handles the user interface, and the server side can be optimized for data processing.
+            </p>
+            <p>
+                <b><u>Three-Tier Architecture</u></b>: When using this architecture, a web application gets divided into the following three layers: presentation (client), application logic (server) and storage (database). This modular structure increases scalability and maintainability. When using this structure the client communicates with the application server, which then processes these requests and then communicates with the database server to receive data or store data.
+            </p>
+        </section>
+        <section id="Section6">
+            <h2>Client-side and server-side engineering</h2>
+            <p>
+                Client-side engineering involves creating the user interface and experience within web browsers using HTML, CSS, and JavaScript.Server-side engineering focuses on handling requests, processing data, and managing databases using languages like Python, Ruby, PHP, and frameworks like Node.js and Django.
+            </p>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            Thus, the evolution of the Internet and the development of the World Wide Web have revolutionized how we communicate and access information. Understanding the history, protocols, and architecture of these technologies is crucial in today's interconnected world.
+        </p>
+    </footer>
+
+</body>
+</html>
